@@ -16,7 +16,7 @@ const File = ({ data }) => {
                 <div>{item.size}</div>
               </div>
 
-              {item.files && item.files.length > 0 && (
+              {expand && item.files && item.files.length > 0 && (
                 <div style={{ marginLeft: "10px" }}>
                   <File data={item.files} />
                 </div>
