@@ -1,5 +1,10 @@
+import { useState } from "react";
+
 const File = ({ data }) => {
   console.log("data", data);
+
+  const [expand, setExpand] = useState(false);
+
   return (
     <div className="file-content">
       {data.length > 0 &&
