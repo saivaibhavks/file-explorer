@@ -14,6 +14,9 @@ const File = ({ data }) => {
               <div style={{ display: "flex" }}>
                 <div>{item.fileName}</div>
                 <div>{item.size}</div>
+                <div>
+                    {item.files ? ">":"\"}
+                </div>
               </div>
 
               {expand && item.files && item.files.length > 0 && (
