@@ -1,10 +1,10 @@
 import { DATA } from "./data";
-import File from "./File";
+import Logic from "./Logic";
 
 const App = () => {
   return (
     <div className="container">
-      <File data={DATA} />
+      <Logic />
     </div>
   );
 };
